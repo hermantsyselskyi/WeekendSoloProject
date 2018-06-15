@@ -1,0 +1,30 @@
+<h1>Add Entry</h1>
+<div class="container">
+        <h2>Entries</h2>
+        <div class="row">
+        <form ng-submit="AC.addEntry()">
+            <input type="text" placeholder="name" ng-model="AC.name">
+            <input type="text" placeholder="backstory" ng-model="AC.backstory">
+            <input type="submit">
+        </form>
+        <div>
+    
+            <section ng-repeat="entry in AC.entries">
+                <div flex="2" class="card">
+                            <div class="card-header">
+                                <h2>{{ entry.name }}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>{{ entry.backstory }}</p>
+                            </div>
+                            <div class="card-footer">
+                                <button ng-click="AC.updateHero()">Update</button>
+                                <button ng-click="AC.deleteHero()">Delete</button>
+                            </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    
+    

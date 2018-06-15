@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-animate.min.js"></script>
+    <script src="vendors/angular-aria.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <script src="vendors/angular-material.min.js"></script>
+    <script src="vendors/angular-messages.min.js"></script>
+     <!-- Controllers -->
+     <script src="scripts/controllers/addEntry.router.js"></script>
+      <!-- Services -->
+      <script src="scripts/services/addEntry.service.js"></script>
+
+</head>
+
+<body>
+   
+  
+  </head>
+  <body ng-app="TimeApp">
+      <a href="#!/">Home</a>
+      <a href="#!/addEntry">Add Entry</a>
+      <a href="#!/manageProject">Manage Project</a>
+      <a href="#!/reports">Reports</a>
+      <ng-view></ng-view>
+    <md-toolbar>
+        <h1>Angular material starter</h1>
+    </md-toolbar>
+</body>
+</html>
